@@ -131,7 +131,11 @@ li .contact-details {
 }
 
 .contact-info .contact-email {
+<<<<<<< HEAD
 	font-size: 0.9rem;
+=======
+	font-size: 0.8rem;
+>>>>>>> 036d783 (allow edit and search)
 	color: royalblue;
 }
 

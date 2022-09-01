@@ -12,10 +12,18 @@ const AddContact = ({ contacts, setContacts }) => {
 			return;
 		}
 
+<<<<<<< HEAD
 		const id = contacts ? contacts[contacts.length - 1].id + 1 : 1;
 		const newContact = {
 			id,
 			contact: newContactName,
+=======
+		console.log(contacts);
+		const id = contacts.length ? contacts[contacts.length - 1].id + 1 : 1;
+		const newContact = {
+			id,
+			name: newContactName,
+>>>>>>> 036d783 (allow edit and search)
 			email: newContactEmail,
 		};
 
