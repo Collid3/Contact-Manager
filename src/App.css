@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	background-color: aliceblue;
+	height: 100vh;
+	width: 100%;
+	padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+	font: inherit;
+	border: none;
+	outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* VARIABLES */
+:root {
+	/* colors */
+	--primary: white;
+	--secondary: black;
+
+	/* border */
+	--paddingBottom: 1rem;
+	--borderBottom: 2px solid lightgray;
+	--marginBottom: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* HEADER */
+
+header {
+	padding-bottom: var(--paddingBottom);
+	border-bottom: var(--borderBottom);
+}
+
+header h1 {
+	text-align: center;
+	border-bottom: var(--borderBottom);
+	padding-bottom: var(--paddingBottom);
+	margin-bottom: var(--marginBottom);
+}
+
+header .add-contact {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.7rem;
+}
+
+.add-contact button {
+	padding: 6px 8px;
+	background-color: blue;
+	color: white;
+	border-radius: 4px;
+}
+
+header .search-contact {
+	width: 100%;
+	position: relative;
+}
+
+.search-contact input {
+	font-size: 1.2rem;
+	width: 100%;
+	padding: 5px;
+	outline: none;
+	border: var(--borderBottom);
+	border-radius: 3px;
+}
+
+.search-contact span {
+	font-size: 1.2rem;
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.search-contact span:hover {
+	color: lime;
+	cursor: pointer;
+}
+
+/* CONTACTS */
+.contact-list ul {
+	list-style: none;
+}
+
+.contact-list li {
+	display: flex;
+	padding: 1rem 0;
+	border-bottom: var(--borderBottom);
+	align-items: center;
+}
+
+.contact-list li:hover {
+	background-color: rgba(199, 112, 81, 0.2);
+}
+
+li .contact-picture {
+	background-color: darkblue;
+	color: lightgray;
+	display: flex;
+	font-size: 2rem;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+li .contact-details {
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact-info {
+	width: 85%;
+}
+
+.contact-info .contact-name {
+	font-weight: bolder;
+}
+
+.contact-info .contact-email {
+	font-size: 0.9rem;
+	color: royalblue;
+}
+
+.contact .buttons {
+	width: 15%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contact .buttons button {
+	background-color: transparent;
+	font-size: 1.2rem;
+}
+
+.buttons .edit-btn:hover {
+	color: orange;
+}
+
+.buttons .delete-btn:hover {
+	color: red;
+}
+
+/* ADD CONTACT */
+.new-contact h2 {
+	text-align: center;
+	margin-bottom: var(--marginBottom);
+	padding-bottom: var(--paddingBottom);
+	border-bottom: var(--borderBottom);
+}
+
+.new-contact label {
+	font-weight: bold;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.new-contact input {
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: 0 0.5px 1px;
+}
+
+.new-contact-form p {
+	margin: 1.2rem 0;
+}
+
+.new-contact button {
+	padding: 8px;
+	border-radius: 3px;
+}
+
+.new-contact .submit-btn {
+	margin-right: 10px;
+	background-color: limegreen;
+	color: white;
+}
+
+.new-contact .submit-btn:hover,
+.new-contact .cancel-btn:hover {
+	opacity: 0.7;
+}
+
+.new-contact .cancel-btn {
+	background-color: red;
+	color: white;
 }
