@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"contacts": [
 		{
 			"id": 2,
@@ -28,3 +29,13 @@
   ]
 }
 >>>>>>> 036d783 (allow edit and search)
+=======
+  "contacts": [
+    {
+      "id": 1,
+      "name": "seroba",
+      "email": "masolathabangjerry11@gmail.com"
+    }
+  ]
+}
+>>>>>>> cd522b1... fixed git pull errors and add contact bug

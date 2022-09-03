@@ -10,9 +10,14 @@ import EditContact from "./components/EditContact";
 function App() {
 	const [contacts, setContacts] = useState([]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	const [search, setSearch] = useState("");
 >>>>>>> 036d783 (allow edit and search)
+=======
+
+	const [search, setSearch] = useState("");
+>>>>>>> cd522b1... fixed git pull errors and add contact bug
 
 	useEffect(() => {
 		const fetchContacts = async () => {
@@ -32,11 +37,16 @@ function App() {
 						element={
 							<>
 <<<<<<< HEAD
+<<<<<<< HEAD
 								<Header />
 								<ContactList
 									contacts={contacts}
 =======
 								<Header search={search} setSearch={setSearch} />
+=======
+								<Header search={search} setSearch={setSearch} />
+
+>>>>>>> cd522b1... fixed git pull errors and add contact bug
 								<ContactList
 									contacts={contacts.filter(
 										(contact) =>
@@ -47,7 +57,10 @@ function App() {
 												.toLowerCase()
 												.includes(search.toLowerCase())
 									)}
+<<<<<<< HEAD
 >>>>>>> 036d783 (allow edit and search)
+=======
+>>>>>>> cd522b1... fixed git pull errors and add contact bug
 									setContacts={setContacts}
 								/>
 							</>
@@ -67,15 +80,21 @@ function App() {
 					<Route
 						path="/contacts/:id"
 <<<<<<< HEAD
+<<<<<<< HEAD
 						element={<EditContact contacts={contacts} />}
 =======
+=======
+>>>>>>> cd522b1... fixed git pull errors and add contact bug
 						element={
 							<EditContact
 								contacts={contacts}
 								setContacts={setContacts}
 							/>
 						}
+<<<<<<< HEAD
 >>>>>>> 036d783 (allow edit and search)
+=======
+>>>>>>> cd522b1... fixed git pull errors and add contact bug
 					/>
 				</Routes>
 			</div>
