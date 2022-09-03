@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-
-const EditContact = ({ contacts }) => {
-	const [edit, setEdit] = useState("");
-	const { id } = useParams();
-
-	function handleUpdate() {
-		console.log("update");
-	}
-
-	function handleCancel() {
-		console.log("cancel");
-=======
-=======
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
@@ -56,22 +38,10 @@ const EditContact = ({ contacts, setContacts }) => {
 
 	function handleCancel() {
 		navigate("/");
-<<<<<<< HEAD
->>>>>>> 036d783 (allow edit and search)
-=======
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 	}
 
 	return (
 		<form onSubmit={(e) => e.preventDefault()}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<p>
-				<label htmlFor="">Name: </label>
-				<input type="text" />
-=======
-=======
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 			<h1>Edit Contact</h1>
 			<p>
 				<label htmlFor="">Name: </label>
@@ -80,37 +50,18 @@ const EditContact = ({ contacts, setContacts }) => {
 					value={editName}
 					onChange={(e) => setEditName(e.target.value)}
 				/>
-<<<<<<< HEAD
->>>>>>> 036d783 (allow edit and search)
-=======
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 			</p>
 
 			<p>
 				<label htmlFor="">Name: </label>
-<<<<<<< HEAD
-<<<<<<< HEAD
-				<input type="text" />
-=======
-=======
-
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 				<input
 					type="text"
 					value={editEmail}
 					onChange={(e) => setEditEmail(e.target.value)}
 				/>
-<<<<<<< HEAD
->>>>>>> 036d783 (allow edit and search)
-=======
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 			</p>
-			<div className="buttons">
-				<button onClick={handleUpdate}>Update</button>
-				<button onClick={handleCancel}>Cancel</button>
-			</div>
+			<button onClick={handleUpdate}>Update</button>
+			<button onClick={handleCancel}>Cancel</button>
 		</form>
 	);
 };
-
-export default EditContact;

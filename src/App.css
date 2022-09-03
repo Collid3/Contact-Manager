@@ -82,11 +82,7 @@ header .search-contact {
 	position: absolute;
 	right: 5px;
 	top: 50%;
-<<<<<<< HEAD
 	transform: translateY(-50%);
-=======
-	transform: translate(-5px, -45%);
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 }
 
 .search-contact span:hover {
@@ -135,25 +131,7 @@ li .contact-details {
 }
 
 .contact-info .contact-email {
-<<<<<<< HEAD
-<<<<<<< HEAD
-	font-size: 0.9rem;
-=======
 	font-size: 0.8rem;
->>>>>>> 036d783 (allow edit and search)
-=======
-	font-size: 0.8rem;
->>>>>>> cd522b1... fixed git pull errors and add contact bug
-	color: royalblue;
-}
-
-.contact .buttons {
-	width: 15%;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.contact .buttons button {
 	background-color: transparent;
 	font-size: 1.2rem;
 }

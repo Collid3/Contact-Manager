@@ -12,24 +12,11 @@ const AddContact = ({ contacts, setContacts }) => {
 			return;
 		}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-		const id = contacts ? contacts[contacts.length - 1].id + 1 : 1;
-		const newContact = {
-			id,
-			contact: newContactName,
-=======
 		console.log(contacts);
-=======
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 		const id = contacts.length ? contacts[contacts.length - 1].id + 1 : 1;
 		const newContact = {
 			id,
 			name: newContactName,
-<<<<<<< HEAD
->>>>>>> 036d783 (allow edit and search)
-=======
->>>>>>> cd522b1... fixed git pull errors and add contact bug
 			email: newContactEmail,
 		};
 
